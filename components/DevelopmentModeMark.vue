@@ -1,14 +1,17 @@
+
 <template>
+<!--
   <div v-if="isDevelopmentMode" class="DevelopmentModeMark">
     開発中（development mode）
     <a
-      href="http://code4takaoka.org:3000/"
+      href="http://code4takaoka.org/"
       target="_blank"
       rel="noopener"
     >
       公開サイトへ
     </a>
   </div>
+ --> 
 </template>
 
 <style lang="scss">
