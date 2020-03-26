@@ -21,8 +21,9 @@ const config: Configuration = {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://code4takaoka.org'
+        content: 'https://toyama-covid19.netlify.com'
       },
+      /*
       {
         hid: 'twitter:card',
         name: 'twitter:card',
@@ -38,6 +39,7 @@ const config: Configuration = {
         name: 'twitter:creator',
         content: '@tokyo_bousai'
       },
+      */
       {
         hid: 'fb:app_id',
         property: 'fb:app_id',
