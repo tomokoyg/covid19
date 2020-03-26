@@ -11,7 +11,7 @@
       公開サイトへ
     </a>
   </div>
- --> 
+  -->
 </template>
 
 <style lang="scss">
