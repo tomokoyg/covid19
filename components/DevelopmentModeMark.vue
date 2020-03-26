@@ -2,7 +2,7 @@
   <div v-if="isDevelopmentMode" class="DevelopmentModeMark">
     開発中（development mode）
     <a
-      href="https://stopcovid19.metro.tokyo.lg.jp/"
+      href="http://code4takaoka.org:3000/"
       target="_blank"
       rel="noopener"
     >

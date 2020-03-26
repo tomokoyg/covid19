@@ -15,7 +15,6 @@
       <template v-if="$i18n.locale !== 'ja-basic'" v-slot:additionalNotes>
         {{ $t('※1: 疑い例・接触者調査') }}
         <br />
-        {{ $t('※2: チャーター便・クルーズ船') }}
       </template>
     </time-stacked-bar-chart>
   </v-col>
@@ -36,11 +35,11 @@ export default {
       Data.inspections_summary.data['その他']
     ]
     const inspectionsItems = [
-      this.$t('都内発生（※1）'),
-      this.$t('その他（※2）')
+      this.$t('県内発生（※1）'),
+      this.$t('その他（未使用）')
     ]
     const inspectionsLabels = Data.inspections_summary.labels
-    const inspectionsDataLabels = [this.$t('都内'), this.$t('その他.graph')]
+    const inspectionsDataLabels = [this.$t('県内'), this.$t('その他.graph')]
 
     const data = {
       Data,

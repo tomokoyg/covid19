@@ -12,6 +12,7 @@
         <span>{{ $t('注釈') }} </span>
       </div>
     </div>
+    <!--tom
     <whats-new class="mb-4" :items="newsItems" />
     <static-info
       class="mb-4"
@@ -19,19 +20,30 @@
       :text="$t('自分や家族の症状に不安や心配があればまずは電話相談をどうぞ')"
       :btn-text="$t('相談の手順を見る')"
     />
+    -->
+    <static-info
+      class="mb-4"
+      :text="$t('3/11以前のデータはまとめてあります')"
+    />
     <v-row class="DataBlock">
+    <!--
       <confirmed-cases-details-card />
       <tested-cases-details-card />
+    -->
       <confirmed-cases-attributes-card />
       <confirmed-cases-number-card />
+<!--
       <inspection-persons-number-card />
+ -->
       <tested-number-card />
       <telephone-advisory-reports-number-card />
       <consultation-desk-reports-number-card />
+    <!--
       <metro-card />
       <agency-card />
       <shinjuku-visitors-card />
       <chiyoda-visitors-card />
+    -->
     </v-row>
   </div>
 </template>
@@ -81,7 +93,7 @@ export default Vue.extend({
       Data,
       headerItem: {
         icon: 'mdi-chart-timeline-variant',
-        title: this.$t('tomoko yarn 都内の最新感染動向')
+        title: this.$t('富山県の感染動向')
       },
       newsItems: News.newsItems
     }
@@ -94,7 +106,7 @@ export default Vue.extend({
   },
   head(): MetaInfo {
     return {
-      title: this.$t('都内の最新感染動向') as string
+      title: this.$t('富山県の感染動向') as string
     }
   }
 })

@@ -1,8 +1,9 @@
 export default {
   strategy: 'prefix_except_default',
   detectBrowserLanguage: {
-    useCookie: true,
+   /* tom useCookie: true,
     cookieKey: 'i18n_redirected'
+    */
   },
   defaultLocale: 'ja',
   vueI18n: {
@@ -20,6 +21,7 @@ export default {
       file: 'ja.json',
       description: 'Japanese'
     },
+    /* tom
     {
       code: 'en',
       name: 'English',
@@ -64,5 +66,6 @@ export default {
       file: 'ja-Hira.json',
       description: 'Easy Japanese'
     }
+    */
   ]
 }

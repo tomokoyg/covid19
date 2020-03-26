@@ -99,7 +99,8 @@ export default {
         updatedAt = Data.patients.date
         break
       case 'number-of-tested':
-        title = this.$t('検査実施件数')
+//tom        title = this.$t('検査実施件数')
+        title = this.$t('新型コロナウイルスPCR検査件数')
         updatedAt = Data.inspections_summary.date
         break
       case 'number-of-inspection-persons':
@@ -107,7 +108,8 @@ export default {
         updatedAt = Data.inspection_persons.date
         break
       case 'number-of-reports-to-covid19-telephone-advisory-center':
-        title = this.$t('新型コロナコールセンター相談件数')
+//tom        title = this.$t('新型コロナコールセンター相談件数')
+        title = this.$t('新型コロナウイルス感染症に関する一般相談件数')
         updatedAt = Data.contacts.date
         break
       case 'number-of-reports-to-covid19-consultation-desk':
@@ -146,7 +148,7 @@ export default {
         ? `${url}/ogp/${this.$route.params.card}.png?t=${timestamp}`
         : `${url}/ogp/${this.$i18n.locale}/${this.$route.params.card}.png?t=${timestamp}`
     const description = `${this.updatedAt} | ${this.$t(
-      '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、東京都が開設したものです。'
+      '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、Code for Takaokaが開設したものです。'
     )}`
 
     return {
@@ -163,7 +165,7 @@ export default {
           content:
             this.title +
             ' | ' +
-            this.$t('東京都') +
+            this.$t('富山県') +
             ' ' +
             this.$t('新型コロナウイルス感染症') +
             this.$t('対策サイト')
