@@ -12,8 +12,8 @@
         <span>{{ $t('注釈') }} </span>
       </div>
     </div>
-    <!--tom
     <whats-new class="mb-4" :items="newsItems" />
+    <!--tom
     <static-info
       class="mb-4"
       :url="localePath('/flow')"
