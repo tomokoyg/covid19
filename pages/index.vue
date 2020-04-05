@@ -23,7 +23,7 @@
     -->
     <static-info
       class="mb-4"
-      :text="$t('3/11以前のデータはまとめてあります')"
+      :text="$t('2/27は当日以前の分も含めて累計で表示しています')"
     />
     <v-row class="DataBlock">
     <!--
