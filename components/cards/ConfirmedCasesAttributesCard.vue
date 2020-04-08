@@ -29,10 +29,16 @@ export default {
     const patientsTable = formatTable(Data.patients.data)
 
     const sumInfoOfPatients = {
-      lText: patientsGraph[
-        patientsGraph.length - 1
-      ].cumulative.toLocaleString(),
-      sText: this.$t('{date}の累計', {
+    /* T.Yago change --->
+    　理由：toyama-patient.csvとtoyama-countes.csvの陽性者数が異なっており
+    　この欄にはtoyama-counts.csvの値が表示されているため
+    */
+    //  lText: patientsGraph[
+    //   patientsGraph.length - 1
+    //  ].cumulative.toLocaleString(),    
+       lText: patientsTable.datasets.length,
+    //<---   
+       sText: this.$t('{date}の累計', {
         date: patientsGraph[patientsGraph.length - 1].label
       }),
       unit: this.$t('人')
